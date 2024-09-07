@@ -20,7 +20,7 @@ import ScrollRestoration from "./components/common/ScrollRestoration.js/ScrollRe
 import ServiceDetail from "./pages/ServicesSection/ServiceDetail/ServiceDetail";
 import { HelmetProvider } from "react-helmet-async";
 import Career from "./pages/Career";
-import Preloader from "./components/Preloader/Preloader";
+import Preloader from "./components/Preloader";
 
 const AppContent = () => {
   const [loading, setLoading] = useState(false);
