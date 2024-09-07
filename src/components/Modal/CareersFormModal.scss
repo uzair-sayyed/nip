@@ -1,0 +1,23 @@
+// =============================
+/* width */
+.career-form::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  .career-form::-webkit-scrollbar-track {
+    background: lightgray;
+  }
+  
+  /* Handle */
+  .career-form::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #143cff;
+  }
+  
+  /* Handle on hover */
+  .career-form::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  // =============================

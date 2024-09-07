@@ -1,0 +1,68 @@
+.btn {
+  background-color: var(--accent, #143cff);
+  color: var(--white, #fff);
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  font-family: var(--primary-font, 'Open Sans', sans-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures even spacing between text and icon */
+  overflow: hidden;
+
+  &:hover {
+    // transform: scale(1.05);
+    background-color: var(--accent, #143cff);
+  }
+
+  .btn-text {
+    position: absolute;
+    top: 50%;
+    left: 1.5rem; /* Adjust this to control left padding */
+    transform: translateY(-50%); /* Center vertically */
+    white-space: nowrap;
+    transition: transform 0.1s ease-in-out, opacity 0.5s ease-in-out;
+    text-align: left;
+    margin-top: 1px;
+  }
+
+  .btn-text.initial {
+    opacity: 1;
+  }
+
+  .btn-text.flipped-text {
+    opacity: 0;
+    transform: translateY(100%); /* Start from below */
+  }
+
+  .btn-text.move-up {
+    transform: translateY(-150%); /* Move out upwards */
+    opacity: 0;
+  }
+
+  .btn-text.move-in {
+    transform: translateY(-50%); /* Move in from below */
+    opacity: 1;
+  }
+
+  .btn-icon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg); /* Initial rotation at 47 degrees */
+    width: 0.9rem;
+    height: 0.9rem;
+    margin-top: 2px;
+    transition: transform 0.1s ease-in-out;
+  }
+
+  .rotate {
+    margin-top: -1px;
+    transform: translateY(-50%) rotate(90deg); /* Rotate to 140 degrees on hover */
+  }
+}

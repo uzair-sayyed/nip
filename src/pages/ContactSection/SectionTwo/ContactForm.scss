@@ -1,0 +1,17 @@
+
+$accent: #143cff;
+$white: white;
+
+form {
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: $accent !important;
+    outline: none !important;
+  }
+
+  button span {
+    color: $white!important;
+  }
+}

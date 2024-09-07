@@ -1,0 +1,301 @@
+$black1: #0c0c0d;
+$black2: #0000;
+$light-grey: #d9d9d9;
+$grey: #677583;
+$accent: #143cff;
+$white: white;
+$white-smoke: #f4f4f4;
+$turquoise: #92eeda;
+$pink: #ba38c9;
+$orange: #ff8149;
+$green: #4f98a0;
+$deep-pink: #d83d80;
+$primary-font: "Almarai", sans-serif;
+$secondary-font: "Cousine", sans-serif;
+
+.slider-container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 32px;
+    padding: 20px 20px 100px 20px;
+    background-color: $white-smoke;
+
+    @media only screen and (max-width: 767px) {
+        & {
+            padding: 20px 20px 60px 20px;
+        }
+    }
+}
+
+.testimonial-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.testimonial-card {
+    width: 48%;
+    border-radius: 20px;
+    padding: 20px 40px;
+    position: relative;
+
+    p {
+        color: $black1;
+        line-height: 1.4;
+    }
+
+    @media only screen and (max-width: 768px) {
+        & {
+            padding: 10px;
+        }
+    }
+}
+
+.stars {
+    color: #005eff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.testimonial-content {
+    margin-bottom: 20px;
+}
+
+.testimonial-footer {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-image {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.testimonial-info {
+    flex-grow: 1;
+
+    h4 {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    p {
+        margin: 0;
+        font-size: 0.875rem;
+        color: #999;
+    }
+}
+
+.testimonial-logo {
+    width: 50px;
+    height: auto;
+}
+
+.slick-slide {
+    padding: 0 30px 0 0;
+
+    @media only screen and (max-width: 768px) {
+        & {
+            padding: 0;
+        }
+    }
+}
+
+.slick-prev,
+.slick-next {
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+}
+
+.slick-prev {
+    right: 60px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 20px;
+    color: white;
+}
+
+.slick-dots {
+    padding-left: 7px;
+    padding-right: 7px;
+    margin: auto;
+    background-color: $white;
+    width: 105px;
+    border-radius: 32px;
+    bottom: -10%;
+    left: 2%;
+    position: absolute;
+    text-align: left;
+    z-index: 10;
+
+    @media only screen and (max-width: 485px) {
+        bottom: -6.5%;
+    }
+
+    @media only screen and (min-width: 768px) {
+        & {
+            width: 90px;
+        }
+    }
+}
+
+.slick-dots li {
+    margin: 0;
+    width: 14px;
+}
+
+.slick-dots li button:before {
+    font-size: 9px;
+    line-height: 18px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    display: none;
+}
+
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 98%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, 0%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.slick-prev,
+.slick-next {
+    width: 27px;
+    height: 17px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+    color: transparent;
+    border: none;
+}
+
+.slick-prev {
+    rotate: 90deg;
+    background-color: $white;
+    left: 87%;
+    height: 45px;
+    width: 45px;
+
+    img {
+        height: 15px;
+    }
+
+    @media only screen and (max-width: 1336px) {
+        & {
+            left: 85%;
+        }
+    }
+
+    @media only screen and (max-width: 1050px) {
+        & {
+            left: 83%;
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+        & {
+            left: 80%;
+        }
+    }
+
+    @media only screen and (max-width: 700px) {
+        & {
+            left: 77%;
+        }
+    }
+
+    @media only screen and (max-width: 606px) {
+        & {
+            left: 74%;
+        }
+    }
+
+    @media only screen and (max-width: 540px) {
+        & {
+            left: 72%;
+        }
+    }
+
+    @media only screen and (max-width: 490px) {
+        & {
+            left: 70%;
+        }
+    }
+
+    @media only screen and (max-width: 454px) {
+        & {
+            left: 67%;
+        }
+    }
+
+    @media only screen and (max-width: 395px) {
+        & {
+            left: 58%;
+        }
+    }
+}
+
+.slick-next {
+    rotate: 270deg;
+    right: 5%;
+    background-color: $white;
+    height: 45px;
+    width: 45px;
+
+    img {
+        height: 15px;
+    }
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in;
+    background: $white;
+}
+
+.testimonial-logo_wrapper {
+    border-left: 2px solid #67758380;
+    z-index: 99;
+}
+
+.divider-line {
+    height: 50px;
+    width: 1px;
+    background-color: #67758380;
+}

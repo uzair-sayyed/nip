@@ -1,0 +1,100 @@
+$black1: #0c0c0d;
+$black2: #0000;
+$light-grey: #d9d9d9;
+$grey: #677583;
+$white: white;
+$white-smoke: #f4f4f4;
+$primary-font: "Almarai", sans-serif;
+$secondary-font: "Cousine", sans-serif;
+.home-section-one {
+    .video-prt{
+        video {
+            -webkit-mask-image: -webkit-radial-gradient(white, black);
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+        }
+    }
+    .cta-prt {
+        font-size: 18px;
+        padding-left: 2.5%;
+
+        .sliding-text {
+            background-color: $white-smoke;
+            max-width: 150px !important;
+        }
+        .cta-btn {
+            .text-base {
+                color: $black1;
+            }
+        }
+    }
+    .lght-hd-clr {
+        color: $grey;
+    }
+    .drk-hd-clr {
+        color: $black1 !important;
+    }
+    .hd-prt h1 {
+        color: $black1;
+        font-size: 80px;
+        font-weight: 300;
+        line-height: 85px;
+    }
+    .para-prt p {
+        color: $black1;
+        font-family: $primary-font;
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 31px;
+        display: flex;
+        justify-content: end;
+    }
+    .hm-btn {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 479px) {
+    .home-section-one{
+        .content-prt {
+            flex-direction: column-reverse;
+        }
+        .para-prt p {
+            font-size: 18px;
+            line-height: 1.3;
+        }
+        .content-prt .video-prt {
+            display: flex;
+            justify-content: end;
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .hm-btn {
+        width: 240px !important;
+    }    
+}
+
+@media screen and (max-width: 991px) {
+    .hd-prt h1 {
+        font-size: 40px;
+        line-height: 60px;
+        width: 100%;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    .hd-prt h1 {
+        font-size: 40px !important;
+        line-height: 40px !important;
+        width: 100%;
+    }
+    .para-prt p {
+        font-size: 19px;
+        justify-content: left;
+    }
+    .mb-video {
+        width: 120px;
+        float: right;
+    }
+}
+

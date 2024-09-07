@@ -1,0 +1,18 @@
+.career-card {
+    background-color:#f4f4f4;
+    position: relative; /* Required for positioning the ::before pseudo-element */
+    padding-left: 40px; /* Adjust as needed to ensure the line doesn’t overlap text/content */
+    margin-bottom: 20px; /* Optional: Space between cards if you have multiple */
+    /* Other styles for the card */
+  }
+  
+
+.career-card::before {
+    content: "";
+    position: absolute; /* Position it absolutely within the card */
+    left: 0; /* Align it to the left edge of the card */
+    top: 0; /* Align it to the top edge of the card */
+    height: 100%; /* Full height of the card */
+    width: 5px; /* Width of the vertical line */
+    background-color: #143cff; /* Color of the line */
+  }

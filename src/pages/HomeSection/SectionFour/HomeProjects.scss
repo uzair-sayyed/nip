@@ -1,0 +1,38 @@
+$black1: #0c0c0d;
+.border-txt {
+  border: 1px solid $black1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  letter-spacing: -0.3px;
+  border-radius: 99vw;
+  padding: 0.2rem 0.5rem 0.1rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: $black1;
+}
+.home-section-four {
+  .top-prt {
+    .top-prt-left {
+      h2 {
+        font-size: 56px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .home-section-four {
+    h2 {
+        font-size: 44px!important;
+      }
+  }
+}
+@media screen and (max-width: 768px) {
+  .home-section-four {
+    h2 {
+        font-size: 32px!important;
+      }
+  }
+}

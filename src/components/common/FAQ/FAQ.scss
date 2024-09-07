@@ -1,0 +1,59 @@
+.drpdown {
+    overflow: hidden;
+
+    .drpdown-head {
+      display: flex;
+      align-items: center;
+      transform: translateX(-3%);
+      transition: transform 0.3s ease-in-out;
+      position: relative;
+      padding: 20px;
+  
+      img {
+        transform: rotate(0deg);
+        transition: transform 0.6s ease-in-out;
+      }
+
+      span.cus-dot {
+        position: absolute;
+        left: -25px;
+        border-radius: 50%;
+        opacity: 0;
+        transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        width: 8px;
+        height: 8px;
+      }
+
+      &:hover {
+        transform: translateX(0%);
+        transition: transform 0.3s ease-in-out;
+
+        span.cus-dot {
+          left: 0px;
+          opacity: 1;
+        }
+      }
+    }
+
+    h3 {
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    .drpdown-content {
+      display: block;
+      transition: max-height 0.7s ease-out, padding 0.7s ease-out;
+      overflow: hidden;
+      max-height: 0;
+
+    }
+
+    .drpdown-content.active {
+      max-height: 300px;
+      transition: max-height 0.7s ease-in, padding 0.7s ease-in;
+    }
+
+    &.active .drpdown-head img {
+      transform: rotate(90deg);
+    }
+  }
